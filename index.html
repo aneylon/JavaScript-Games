@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css" integrity="sha384-Bo21yfmmZuXwcN/9vKrA5jPUMhr7znVBBeLxT9MA4r2BchhusfJ6+n8TLGUcRAtL" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="Libraries/random.js"></script>
   <script src="javascript-games.js"></script>
 </head>
 <body>
@@ -20,13 +21,13 @@
 
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="/Math/">Math</a>
+        <a class="nav-link" href="Math/index.html">Math</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Memory">Memory</a>
+        <a class="nav-link" href="Memory/index.html">Memory</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Pairs/">Pairs</a>
+        <a class="nav-link" href="Pairs/index.html">Pairs</a>
       </li>
     </ul>
   </nav>
@@ -42,7 +43,13 @@
       <div class="card-body">
         <h4 class="card-title">Play a random game.</h4>
         <p class="card-text">Let the site select a game for you to play at random.</p>
-        <button class="btn btn-primary btn-lg" data-toggle="tooltip" title="comming soon" alt="comming soon" disabled>Game On</button>
+        <button
+          id="randomGame"
+          class="btn btn-primary btn-lg"
+          data-toggle="tooltip"
+          title="comming soon"
+          alt="comming soon"
+          disabled>Game On</button>
       </div>
     </div>
   
@@ -64,11 +71,5 @@
       </div>
     </div>
   </div>
-
-  <script>
-    $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();
-    });
-  </script>
 </body>
 </html>
